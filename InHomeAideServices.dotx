@@ -1,140 +1,215 @@
-
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<?mso-application progid="Word.Document"?>
-<w:wordDocument xmlns:w="http://schemas.microsoft.com/office/word/2003/wordml">
-  <w:styles>
-    <!-- Default paragraph style -->
-    <w:style w:type="paragraph" w:styleId="Normal">
-      <w:name w:val="Normal"/>
-      <w:pPr>
-        <w:spacing w:before="240" w:after="240"/>
-        <w:jc w:val="left"/>
-      </w:pPr>
-      <w:rPr>
-        <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
-        <w:sz w:val="22"/>
-      </w:rPr>
-    </w:style>
+<pkg:package xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage">
+  <!-- Package Relationships -->
+  <pkg:part pkg:name="/_rels/.rels" pkg:contentType="application/vnd.openxmlformats-package.relationships+xml">
+    <Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+      <Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="/word/document.xml"/>
+    </Relationships>
+  </pkg:part>
 
-    <!-- Header 1 Style -->
-    <w:style w:type="paragraph" w:styleId="Heading1">
-      <w:name w:val="heading 1"/>
-      <w:basedOn w:val="Normal"/>
-      <w:pPr>
-        <w:spacing w:before="480" w:after="240"/>
-        <w:outlineLvl w:val="0"/>
-      </w:pPr>
-      <w:rPr>
-        <w:b/>
-        <w:sz w:val="24"/>
-      </w:rPr>
-    </w:style>
+  <!-- Main Document -->
+  <pkg:part pkg:name="/word/document.xml" pkg:contentType="application/vnd.openxmlformats-officedocument.wordprocessingml.template.main+xml">
+    <w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" 
+               xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+               xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml"
+               xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006">
+      
+      <!-- Document Properties -->
+      <w:body>
+        <!-- Default Section Properties -->
+        <w:sectPr>
+          <w:pgSz w:w="12240" w:h="15840"/>
+          <w:pgMar w:top="1440" w:right="1440" w:bottom="1440" w:left="1440"/>
+          <w:headerReference w:type="default" r:id="rId1"/>
+          <w:footerReference w:type="default" r:id="rId2"/>
+        </w:sectPr>
+      </w:body>
+    </w:document>
+  </pkg:part>
 
-    <!-- Header 2 Style -->
-    <w:style w:type="paragraph" w:styleId="Heading2">
-      <w:name w:val="heading 2"/>
-      <w:basedOn w:val="Normal"/>
-      <w:pPr>
-        <w:spacing w:before="360" w:after="240"/>
-        <w:ind w:left="720"/>
-        <w:outlineLvl w:val="1"/>
-      </w:pPr>
-      <w:rPr>
-        <w:b/>
-      </w:rPr>
-    </w:style>
+  <!-- Styles -->
+  <pkg:part pkg:name="/word/styles.xml" pkg:contentType="application/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml">
+    <w:styles xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">
+      <!-- Default Style -->
+      <w:style w:type="paragraph" w:default="1" w:styleId="Normal">
+        <w:name w:val="Normal"/>
+        <w:qFormat/>
+        <w:pPr>
+          <w:spacing w:before="240" w:after="240" w:line="276"/>
+        </w:pPr>
+        <w:rPr>
+          <w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/>
+          <w:sz w:val="22"/>
+        </w:rPr>
+      </w:style>
 
-    <!-- Header 3 Style -->
-    <w:style w:type="paragraph" w:styleId="Heading3">
-      <w:name w:val="heading 3"/>
-      <w:basedOn w:val="Normal"/>
-      <w:pPr>
-        <w:spacing w:before="360" w:after="240"/>
-        <w:ind w:left="1080"/>
-        <w:outlineLvl w:val="2"/>
-      </w:pPr>
-      <w:rPr>
-        <w:b/>
-      </w:rPr>
-    </w:style>
+      <!-- Heading 1 -->
+      <w:style w:type="paragraph" w:styleId="Heading1">
+        <w:name w:val="heading 1"/>
+        <w:basedOn w:val="Normal"/>
+        <w:next w:val="Normal"/>
+        <w:qFormat/>
+        <w:pPr>
+          <w:spacing w:before="480" w:after="240"/>
+          <w:numPr>
+            <w:numId w:val="1"/>
+            <w:ilvl w:val="0"/>
+          </w:numPr>
+        </w:pPr>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:style>
 
-    <!-- Bullet List Style -->
-    <w:style w:type="paragraph" w:styleId="ListBullet">
-      <w:name w:val="List Bullet"/>
-      <w:basedOn w:val="Normal"/>
-      <w:pPr>
-        <w:ind w:left="1440" w:hanging="360"/>
-      </w:pPr>
-    </w:style>
+      <!-- Heading 2 -->
+      <w:style w:type="paragraph" w:styleId="Heading2">
+        <w:name w:val="heading 2"/>
+        <w:basedOn w:val="Normal"/>
+        <w:next w:val="Normal"/>
+        <w:qFormat/>
+        <w:pPr>
+          <w:spacing w:before="360" w:after="240"/>
+          <w:ind w:left="720"/>
+          <w:numPr>
+            <w:numId w:val="2"/>
+            <w:ilvl w:val="0"/>
+          </w:numPr>
+        </w:pPr>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+      </w:style>
 
-    <!-- Header Style -->
-    <w:style w:type="paragraph" w:styleId="Header">
-      <w:name w:val="header"/>
-      <w:basedOn w:val="Normal"/>
-      <w:pPr>
-        <w:spacing w:before="120" w:after="120"/>
-      </w:pPr>
-    </w:style>
+      <!-- Header Style -->
+      <w:style w:type="paragraph" w:styleId="Header">
+        <w:name w:val="header"/>
+        <w:basedOn w:val="Normal"/>
+        <w:pPr>
+          <w:spacing w:before="120" w:after="120"/>
+          <w:jc w:val="center"/>
+        </w:pPr>
+      </w:style>
 
-    <!-- Banner Title Style -->
-    <w:style w:type="paragraph" w:styleId="BannerTitle">
-      <w:name w:val="Banner Title"/>
-      <w:basedOn w:val="Normal"/>
-      <w:pPr>
-        <w:jc w:val="center"/>
-        <w:spacing w:before="240" w:after="240"/>
-      </w:pPr>
-      <w:rPr>
-        <w:b/>
-        <w:caps w:val="on"/>
-      </w:rPr>
-    </w:style>
-  </w:styles>
+      <!-- Banner Title -->
+      <w:style w:type="paragraph" w:styleId="BannerTitle">
+        <w:name w:val="Banner Title"/>
+        <w:basedOn w:val="Normal"/>
+        <w:qFormat/>
+        <w:pPr>
+          <w:jc w:val="center"/>
+          <w:spacing w:before="240" w:after="240"/>
+        </w:pPr>
+        <w:rPr>
+          <w:b/>
+          <w:caps/>
+        </w:rPr>
+      </w:style>
+    </w:styles>
+  </pkg:part>
 
-  <!-- Document grid and section properties -->
-  <w:docPr>
-    <w:defaultTabStop w:val="720"/>
-    <w:pageSetup>
-      <w:paperSize w:w="12240" w:h="15840"/>
-      <w:pgMar w:top="1440" w:right="1440" w:bottom="1440" w:left="1440"/>
-    </w:pageSetup>
-  </w:docPr>
+  <!-- Numbering Definitions -->
+  <pkg:part pkg:name="/word/numbering.xml" pkg:contentType="application/vnd.openxmlformats-officedocument.wordprocessingml.numbering+xml">
+    <w:numbering xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">
+      <!-- Roman Numeral Numbering -->
+      <w:abstractNum w:abstractNumId="1">
+        <w:lvl w:ilvl="0">
+          <w:numFmt w:val="upperRoman"/>
+          <w:lvlText w:val="%1."/>
+          <w:lvlJc w:val="left"/>
+          <w:pPr>
+            <w:ind w:left="720" w:hanging="360"/>
+          </w:pPr>
+        </w:lvl>
+      </w:abstractNum>
 
-  <!-- Header content -->
-  <w:hdr>
-    <w:p>
-      <w:pPr>
-        <w:pStyle w:val="Header"/>
-      </w:pPr>
-      <w:r>
-        <w:t>North Carolina Division of Aging</w:t>
-      </w:r>
-    </w:p>
-    <w:p>
-      <w:pPr>
-        <w:pStyle w:val="Header"/>
-      </w:pPr>
-      <w:r>
-        <w:t>In-Home Aide Services – Policies and Procedures</w:t>
-      </w:r>
-    </w:p>
-    <w:p>
-      <w:pPr>
-        <w:pStyle w:val="Header"/>
-      </w:pPr>
-      <w:r>
-        <w:t>Effective Date – [Date]</w:t>
-      </w:r>
-    </w:p>
-  </w:hdr>
+      <!-- Alphabetic Numbering -->
+      <w:abstractNum w:abstractNumId="2">
+        <w:lvl w:ilvl="0">
+          <w:numFmt w:val="upperLetter"/>
+          <w:lvlText w:val="%1."/>
+          <w:lvlJc w:val="left"/>
+          <w:pPr>
+            <w:ind w:left="1440" w:hanging="360"/>
+          </w:pPr>
+        </w:lvl>
+      </w:abstractNum>
 
-  <!-- Banner Title -->
-  <w:p>
-    <w:pPr>
-      <w:pStyle w:val="BannerTitle"/>
-    </w:pPr>
-    <w:r>
-      <w:t>IN-HOME AIDE SERVICES</w:t>
-    </w:r>
-  </w:p>
-</w:wordDocument>
+      <w:num w:numId="1">
+        <w:abstractNumId w:val="1"/>
+      </w:num>
+      <w:num w:numId="2">
+        <w:abstractNumId w:val="2"/>
+      </w:num>
+    </w:numbering>
+  </pkg:part>
+
+  <!-- Theme -->
+  <pkg:part pkg:name="/word/theme/theme1.xml" pkg:contentType="application/vnd.openxmlformats-officedocument.theme+xml">
+    <a:theme xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" name="Office Theme">
+      <a:themeElements>
+        <a:fontScheme name="Office">
+          <a:majorFont>
+            <a:latin typeface="Times New Roman"/>
+          </a:majorFont>
+          <a:minorFont>
+            <a:latin typeface="Times New Roman"/>
+          </a:minorFont>
+        </a:fontScheme>
+        <a:clrScheme name="Office">
+          <!-- Theme colors -->
+        </a:clrScheme>
+      </a:themeElements>
+    </a:theme>
+  </pkg:part>
+
+  <!-- Header -->
+  <pkg:part pkg:name="/word/header1.xml" pkg:contentType="application/vnd.openxmlformats-officedocument.wordprocessingml.header+xml">
+    <w:hdr xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">
+      <w:p>
+        <w:pPr>
+          <w:pStyle w:val="Header"/>
+        </w:pPr>
+        <w:r>
+          <w:t>North Carolina Division of Aging</w:t>
+        </w:r>
+      </w:p>
+      <w:p>
+        <w:pPr>
+          <w:pStyle w:val="Header"/>
+        </w:pPr>
+        <w:r>
+          <w:t>In-Home Aide Services – Policies and Procedures</w:t>
+        </w:r>
+      </w:p>
+      <w:p>
+        <w:pPr>
+          <w:pStyle w:val="Header"/>
+        </w:pPr>
+        <w:r>
+          <w:t>Effective Date – [Date]</w:t>
+        </w:r>
+      </w:p>
+    </w:hdr>
+  </pkg:part>
+
+  <!-- Footer -->
+  <pkg:part pkg:name="/word/footer1.xml" pkg:contentType="application/vnd.openxmlformats-officedocument.wordprocessingml.footer+xml">
+    <w:ftr xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">
+      <w:p>
+        <w:pPr>
+          <w:jc w:val="center"/>
+        </w:pPr>
+        <w:r>
+          <w:fldChar w:fldCharType="begin"/>
+        </w:r>
+        <w:r>
+          <w:instrText>PAGE</w:instrText>
+        </w:r>
+        <w:r>
+          <w:fldChar w:fldCharType="end"/>
+        </w:r>
+      </w:p>
+    </w:ftr>
+  </pkg:part>
+</pkg:package>
