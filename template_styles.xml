@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<styles>
+  <style name="Normal">
+    <font name="Times New Roman" size="11"/>
+    <paragraph alignment="left" spaceAfter="6pt" spaceBefore="6pt"/>
+  </style>
+  <style name="Heading1">
+    <font name="Times New Roman" size="12" bold="true"/>
+    <paragraph alignment="left" spaceAfter="12pt" spaceBefore="12pt"/>
+    <numbering format="I"/>
+  </style>
+  <style name="Heading2">
+    <font name="Times New Roman" size="12" bold="true"/>
+    <paragraph alignment="left" indent="0.5in" spaceAfter="6pt" spaceBefore="6pt"/>
+    <numbering format="A"/>
+  </style>
+  <style name="Heading3">
+    <font name="Times New Roman" size="12" bold="true"/>
+    <paragraph alignment="left" indent="0.75in" spaceAfter="6pt" spaceBefore="6pt"/>
+    <numbering format="1"/>
+  </style>
+  <style name="BannerTitle">
+    <font name="Times New Roman" size="14" bold="true"/>
+    <paragraph alignment="center" spaceAfter="12pt" spaceBefore="12pt"/>
+    <allCaps/>
+  </style>
+</styles>
